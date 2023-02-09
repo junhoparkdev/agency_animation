@@ -1,0 +1,249 @@
+@import url("./fonts.css");
+@import url("./reset.css");
+@import url("./skip.css");
+#wrap {
+  width: 100%;
+  height: 100%;
+}
+#wrap #header {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  height: 76px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+#wrap #header .container {
+  width: 100%;
+  height: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+#wrap #header .container .gap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#wrap #header .container .gap .content {
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+#wrap #header .container .gap .content .nav-logo {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrap #header .container .gap .content .nav-logo img {
+  height: 30px;
+}
+#wrap #header .container .gap .content .nav-logo hr {
+  width: 0.5px;
+  height: 20px;
+  background: #ccc;
+  margin: 0 0 0 30px;
+}
+#wrap #header .container .gap .content .nav-menu {
+  width: 620px;
+  height: 100%;
+}
+#wrap #header .container .gap .content .nav-menu ul {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#wrap #header .container .gap .content .nav-menu ul li {
+  margin: 0 20px;
+}
+#wrap #header .container .gap .content .nav-menu ul li a {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+#wrap #header .container .gap .content .nav-menu ul li a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+#wrap #header .container .gap .content .nav-right {
+  width: 350px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#wrap #header .container .gap .content .nav-right h3 {
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 20px 0 0;
+}
+#wrap #header .container .gap .content .nav-right a {
+  width: 100px;
+  height: 25px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  line-height: 25px;
+  transition: all 0.3s;
+}
+#wrap #header .container .gap .content .nav-right a:hover {
+  color: #000;
+  background: #fff;
+}
+#wrap #main {
+  position: relative;
+  z-index: 2;
+}
+#wrap #main #section1 {
+  width: 100%;
+}
+#wrap #main #section1 .container {
+  width: 100%;
+  position: relative;
+}
+#wrap #main #section1 .container .slide-container {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+#wrap #main #section1 .container .slide-container .slide-view {
+  width: 100%;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap {
+  position: relative;
+  width: 400%;
+  display: flex;
+  animation: slide 15s infinite ease-in-out;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide {
+  width: 100%;
+  height: 100vh;
+  background: url() no-repeat 50% 50%;
+  background-size: cover;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide1 {
+  background-image: url(../img/slider-img1.jpg);
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide2 {
+  background-image: url(../img/slider-img2.jpg);
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide3 {
+  background-image: url(../img/slider-img3.jpg);
+}
+#wrap #main #section1 .container .title-box {
+  width: 1170px;
+  height: 400px;
+  padding: 0 15px;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  z-index: 2;
+}
+#wrap #main #section1 .container .title-box h2 {
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 0.26px;
+  color: #fff;
+}
+#wrap #main #section1 .container .title-box hr {
+  margin: 80px 0;
+  width: 570px;
+  height: 8px;
+  background: yellow;
+  border: 0;
+}
+#wrap #main #section1 .container .title-box h3 {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.26px;
+  color: #fff;
+}
+#wrap #main #section1 .container .btn-box {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  bottom: 30px;
+}
+#wrap #main #section1 .container .btn-box ul {
+  display: flex;
+  justify-content: center;
+}
+#wrap #main #section1 .container .btn-box ul li {
+  padding: 6px 5px;
+}
+#wrap #main #section1 .container .btn-box ul li a hr {
+  width: 50px;
+  height: 5px;
+  border: 0px solid rgb(98, 98, 98);
+  background: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s;
+}
+#wrap #main #section1 .container .btn-box ul li a:hover hr {
+  background: rgba(255, 255, 255, 0.9);
+}
+@keyframes slide {
+  0.00% {
+    transform: translateX(0px);
+  }
+  6.67% {
+    transform: translateX(0px);
+  }
+  13.33% {
+    transform: translateX(0px);
+  }
+  20.00% {
+    transform: translateX(0px);
+  }
+  26.67% {
+    transform: translateX(0px);
+  }
+  33.33% {
+    transform: translateX(-1903px);
+  }
+  40.00% {
+    transform: translateX(-1903px);
+  }
+  46.67% {
+    transform: translateX(-1903px);
+  }
+  53.33% {
+    transform: translateX(-1903px);
+  }
+  60.00% {
+    transform: translateX(-1903px);
+  }
+  66.67% {
+    transform: translateX(-3806px);
+  }
+  73.33% {
+    transform: translateX(-3806px);
+  }
+  80.00% {
+    transform: translateX(-3806px);
+  }
+  86.67% {
+    transform: translateX(-3806px);
+  }
+  93.33% {
+    transform: translateX(-3806px);
+  }
+  100.00% {
+    transform: translateX(-5709px);
+  }
+}
